@@ -1,0 +1,136 @@
+{
+    "publicTime": "2023-08-15T05:00:00+09:00",
+    "publicTimeFormatted": "2023/08/15 05:00:00",
+    "publishingOffice": "奈良地方気象台",
+    "title": "奈良県 奈良 の天気",
+    "link": "https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=290000",
+    "description": {
+        "publicTime": "2023-08-15T04:35:00+09:00",
+        "publicTimeFormatted": "2023/08/15 04:35:00",
+        "headlineText": "",
+        "bodyText": "　奈良県は、台風第７号の影響で雨となり、非常に激しい雨の降っている所があります。\n\n　１５日の奈良県は、台風第７号の影響で雨や雷雨となる見込みです。北部では昼過ぎまで、南部では夕方まで非常に激しい雨の降る所があるでしょう。\n\n　１６日の奈良県は、台風第７号の影響で明け方まで雨が降る見込みです。その後は、気圧の谷や湿った空気の影響で曇るでしょう。雷を伴う所がある見込みです。",
+        "text": "　奈良県は、台風第７号の影響で雨となり、非常に激しい雨の降っている所があります。\n\n　１５日の奈良県は、台風第７号の影響で雨や雷雨となる見込みです。北部では昼過ぎまで、南部では夕方まで非常に激しい雨の降る所があるでしょう。\n\n　１６日の奈良県は、台風第７号の影響で明け方まで雨が降る見込みです。その後は、気圧の谷や湿った空気の影響で曇るでしょう。雷を伴う所がある見込みです。"
+    },
+    "forecasts": [
+        {
+            "date": "2023-08-15",
+            "dateLabel": "今日",
+            "telop": "暴風雨",
+            "detail": {
+                "weather": "雨　所により　昼過ぎ　まで　雷を伴い　非常に　激しく　降る",
+                "wind": "北の風　非常に強く　後　南の風　やや強く",
+                "wave": null
+            },
+            "temperature": {
+                "min": {
+                    "celsius": null,
+                    "fahrenheit": null
+                },
+                "max": {
+                    "celsius": "28",
+                    "fahrenheit": "82.4"
+                }
+            },
+            "chanceOfRain": {
+                "T00_06": "--%",
+                "T06_12": "100%",
+                "T12_18": "100%",
+                "T18_24": "70%"
+            },
+            "image": {
+                "title": "暴風雨",
+                "url": "https://www.jma.go.jp/bosai/forecast/img/308.svg",
+                "width": 80,
+                "height": 60
+            }
+        },
+        {
+            "date": "2023-08-16",
+            "dateLabel": "明日",
+            "telop": "曇一時雨",
+            "detail": {
+                "weather": "くもり　明け方　まで　雨　所により　雷　を伴う",
+                "wind": "南の風　やや強く　後　西の風",
+                "wave": null
+            },
+            "temperature": {
+                "min": {
+                    "celsius": "26",
+                    "fahrenheit": "78.8"
+                },
+                "max": {
+                    "celsius": "33",
+                    "fahrenheit": "91.4"
+                }
+            },
+            "chanceOfRain": {
+                "T00_06": "50%",
+                "T06_12": "20%",
+                "T12_18": "10%",
+                "T18_24": "10%"
+            },
+            "image": {
+                "title": "曇一時雨",
+                "url": "https://www.jma.go.jp/bosai/forecast/img/202.svg",
+                "width": 80,
+                "height": 60
+            }
+        },
+        {
+            "date": "2023-08-17",
+            "dateLabel": "明後日",
+            "telop": "曇一時雨",
+            "detail": {
+                "weather": null,
+                "wind": null,
+                "wave": null
+            },
+            "temperature": {
+                "min": {
+                    "celsius": "25",
+                    "fahrenheit": "77"
+                },
+                "max": {
+                    "celsius": "32",
+                    "fahrenheit": "89.6"
+                }
+            },
+            "chanceOfRain": {
+                "T00_06": "50%",
+                "T06_12": "50%",
+                "T12_18": "50%",
+                "T18_24": "50%"
+            },
+            "image": {
+                "title": "曇一時雨",
+                "url": "https://www.jma.go.jp/bosai/forecast/img/202.svg",
+                "width": 80,
+                "height": 60
+            }
+        }
+    ],
+    "location": {
+        "area": "近畿",
+        "prefecture": "奈良県",
+        "district": "北部",
+        "city": "奈良"
+    },
+    "copyright": {
+        "title": "(C) 天気予報 API（livedoor 天気互換）",
+        "link": "https://weather.tsukumijima.net/",
+        "image": {
+            "title": "天気予報 API（livedoor 天気互換）",
+            "link": "https://weather.tsukumijima.net/",
+            "url": "https://weather.tsukumijima.net/logo.png",
+            "width": 120,
+            "height": 120
+        },
+        "provider": [
+            {
+                "link": "https://www.jma.go.jp/jma/",
+                "name": "気象庁 Japan Meteorological Agency",
+                "note": "気象庁 HP にて配信されている天気予報を JSON データへ編集しています。"
+            }
+        ]
+    }
+}

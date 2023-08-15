@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { JsonReaderComponent } from './json-reader/json-reader.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    JsonReaderComponent
   ],
   imports: [
     BrowserModule,
