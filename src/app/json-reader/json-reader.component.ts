@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from '../../../data.json';
+import { JsonDataService } from '../json-data.service';
 
 @Component({
   selector: 'app-json-reader',
@@ -21,27 +22,23 @@ export class JsonReaderComponent implements OnInit {
   tomorrow_label: string = "";
   tomorrow_telop: string = "";
   
-  constructor() {
-   }
+  constructor(private jsonDataService: JsonDataService) {
+  }
 
   ngOnInit(): void {
-    this.jsonData = data;
-    // var jsonObject = JSON.parse(this.jsonData);
-    // this.jsontitle = jsonObject["title"] ;
-    // this.messagestring = "aafff";
-    this.publicTimeFormatted = this.jsonData["publicTimeFormatted"];
-    this.title = this.jsonData["title"];
-    this.office = this.jsonData["publishingOffice"];
-    this.bodyText = this.jsonData.description.bodyText;
-    this.today = this.jsonData.forecasts[0].date;
-    this.today_label = this.jsonData.forecasts[0].dateLabel;
-    this.today_telop = this.jsonData.forecasts[0].telop;
-    this.tomorrow = this.jsonData.forecasts[1].date;
-    this.tomorrow_label = this.jsonData.forecasts[1].dateLabel;
-    this.tomorrow_telop = this.jsonData.forecasts[1].telop;
-
-
-
+    this.jsonDataService.getJsonData().subscribe(data => {
+      this.jsonData = data;
+      this.publicTimeFormatted = this.jsonData["publicTimeFormatted"];
+      this.title = this.jsonData["title"];
+      this.office = this.jsonData["publishingOffice"];
+      this.bodyText = this.jsonData.description.bodyText;
+      this.today = this.jsonData.forecasts[0].date;
+      this.today_label = this.jsonData.forecasts[0].dateLabel;
+      this.today_telop = this.jsonData.forecasts[0].telop;
+      this.tomorrow = this.jsonData.forecasts[1].date;
+      this.tomorrow_label = this.jsonData.forecasts[1].dateLabel;
+      this.tomorrow_telop = this.jsonData.forecasts[1].telop;
+    });
   }
 
 }
