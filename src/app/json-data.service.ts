@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class JsonDataService {
-  private jsonUrl = 'http://133.242.143.169/json/otenki.json'; // JSONファイルのURL
-  private jsonMongo = "http://133.242.143.169/test/test.php";
+  private jsonUrl = 'https://ik1-108-60915.vs.sakura.ne.jp/json/otenki.json'; // JSONファイルのURL
+  private jsonMongo = "https://ik1-108-60915.vs.sakura.ne.jp/test/test.php";
 
   constructor(private http: HttpClient) { }
 
