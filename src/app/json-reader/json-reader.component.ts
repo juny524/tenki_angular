@@ -9,6 +9,7 @@ import { JsonDataService } from '../json-data.service';
 })
 export class JsonReaderComponent implements OnInit {
   jsonData: any;
+  jsonDataMongo: any;
   jsontitle: any;
   messagestring: string = "sss";
   title: string = ""; // 変数を定義
@@ -21,6 +22,7 @@ export class JsonReaderComponent implements OnInit {
   tomorrow: string = "";
   tomorrow_label: string = "";
   tomorrow_telop: string = "";
+  city: string = "";
   
   constructor(private jsonDataService: JsonDataService) {
   }
@@ -38,6 +40,10 @@ export class JsonReaderComponent implements OnInit {
       this.tomorrow = this.jsonData.forecasts[1].date;
       this.tomorrow_label = this.jsonData.forecasts[1].dateLabel;
       this.tomorrow_telop = this.jsonData.forecasts[1].telop;
+    });
+    this.jsonDataService.getJsonDataMongo().subscribe(data => {
+      this.jsonDataMongo = data;
+      this.city = this.jsonDataMongo.city;
     });
   }
 
